@@ -28,4 +28,4 @@ print("Join with space:", " ".join(words))
 
 # Check start and end
 print("Starts with '  He':", s.startswith("  He"))
-print("Ends with '!  ':", s.endswith("!  "))
+print("Ends with 'World!  ':", s.endswith("World!  "))
