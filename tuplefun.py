@@ -24,12 +24,3 @@ another_tuple = (60, 70)
 concatenated = my_tuple + another_tuple
 print("Concatenated tuple:", concatenated)
 
-# Repetition
-repeated = my_tuple * 2
-print("Repeated tuple:", repeated)
-
-# Convert to list and back
-my_list = list(my_tuple)
-print("Converted to list:", my_list)
-new_tuple = tuple(my_list)
-print("Converted back to tuple:", new_tuple)
