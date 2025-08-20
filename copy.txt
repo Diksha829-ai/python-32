@@ -1,0 +1,6 @@
+This is a sample file.
+It contains multiple lines.
+This is the third line.
+I am Diksha, a student of TY CSE.
+I am learning Python.
+This is the last line.
