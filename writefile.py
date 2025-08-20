@@ -22,4 +22,3 @@ content = f.read()
 print("write the File Content:\n", content)
 # Close the file
 f.close()
-
