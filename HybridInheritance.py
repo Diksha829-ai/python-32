@@ -1,22 +1,45 @@
 #hybrid Inheritance
-class A:
-    def showA(self):
-        print("Class A")
 
-class B(A):   # Single
-    def showB(self):
-        print("Class B")
+# Base Class
+class Student:
+    def __init__(self, name):  # Base class constructor
+        self.name = name
 
-class C(A):   # Hierarchical
-    def showC(self):
-        print("Class C")
+    def show_student(self):
+        print("Student Name:", self.name)
 
-class D(B, C):   # Multiple
-    def showD(self):
-        print("Class D")
+# Derived from Student
+class Exam(Student):
+    def __init__(self, name, marks): # Derived class constructor
+        Student.__init__(self, name)   # Direct call
+        self.marks = marks
 
-d = D()
-d.showA()
-d.showB()
-d.showC()
-d.showD()
+    def show_exam(self):
+        print("Exam Marks:", self.marks)
+
+# Derived from Student
+class Project(Student): 
+    def __init__(self, name, project_score):
+        Student.__init__(self, name)   # Direct call
+        self.project_score = project_score
+
+    def show_project(self):
+        print("Project Score:", self.project_score)
+
+# Derived from Exam and Project (Hybrid Inheritance)
+class Result(Exam, Project): 
+    def __init__(self, name, marks, project_score):
+        Exam.__init__(self, name, marks)        # Explicit calls
+        Project.__init__(self, name, project_score)
+
+    def show_result(self):
+        total = self.marks + self.project_score
+        print(f"Final Result for {self.name}: {total} marks")
+
+# ----------------------------
+# Execution
+r = Result("Diksha", 90, 90)
+r.show_student()
+r.show_exam()
+r.show_project() 
+r.show_result()
