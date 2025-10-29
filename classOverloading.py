@@ -4,6 +4,7 @@ class Student:
         self.name = name
         self.age = age
         self.grade = grade
+0
 
 
     def display(self):
@@ -14,7 +15,7 @@ class Student:
             info += f", Grade: {self.grade}"
         print(info)
 
-        
+
 # Creating instances with different parameters
 s1 = Student("Alice")
 s2 = Student("Bob", 20)
