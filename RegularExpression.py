@@ -5,7 +5,6 @@ regex = r'\d+'
 match = re.findall(regex, string)
 print(match)
 
-
 # find and list all lowercase letters from 'a'to 'e'
 p = re.compile('[a-e]')
 print(p.findall("Aye, said Mr. Gibenson Stark"))
